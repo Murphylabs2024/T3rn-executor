@@ -134,10 +134,8 @@ apt install curl -y
 ```
 # Cài đặt node
 
-curl -L -o t3rnSetup.zip link && \
-unzip t3rnSetup.zip && \
+curl -L https://raw.githubusercontent.com/Murphylabs2024/T3rn-executor/refs/heads/main/code/t3rnSetup.sh -o t3rnSetup.sh && \
 chmod +x ./t3rnSetup.sh && \
-rm -rf t3rnSetup.zip && \
 bash ./t3rnSetup.sh
 ```
 
