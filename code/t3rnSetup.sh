@@ -66,7 +66,7 @@ function install() {
     cd t3rn
 
     # Tải dữ liệu
-    echo "Đang tải executor-linux-v0.33.0.tar.gz..."
+    echo "Đang tải executor-linux-v0.34.0.tar.gz..."
     curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
     grep -Po '"tag_name": "\K.*?(?=")' | \
     xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/executor-linux-{}.tar.gz
@@ -81,7 +81,7 @@ function install() {
     fi
 
     # Giải nén
-    echo "Giải nén executor-linux-v0.33.0.tar.gz..."
+    echo "Giải nén executor-linux-v0.34.0.tar.gz..."
     tar -xzf executor-linux-*.tar.gz
 
     # Kiểm tra cài đặt thành công
@@ -89,7 +89,7 @@ function install() {
         echo "Giải nén thành công."
     else
         echo "Giải nén thất bại. Thực hiện câu lệnh 'ls -a' để kiểm tra tập tin."
-        rm executor-linux-v0.33.0.tar.gz
+        rm executor-linux-v0.34.0.tar.gz
         exit 1
     fi
 
